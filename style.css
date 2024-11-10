@@ -24,7 +24,7 @@ body {
 /* Estilo del encabezado */
 header {
     background: linear-gradient(135deg, #4a4a4d, #1f1f21);
-    color: #d4af37; /* Dorado suave */
+    color: #ff4d4d; /* Rojo suave */
     padding: 20px;
     font-size: 1.8em;
     font-weight: bold;
@@ -48,7 +48,7 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    color: #f0e68c; /* Color dorado suave para el texto */
+    color: #ff6666; /* Rojo suave para el texto */
     background: linear-gradient(135deg, #3e3e42, #29292b);
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -68,7 +68,7 @@ button:active {
 
 /* Estilo del botón "Regresar" */
 button.regresar {
-    background: #d4af37; /* Color dorado */
+    background: #ff4d4d; /* Rojo */
     margin-top: 20px;
     padding: 10px 15px;
     font-size: 1em;
@@ -81,11 +81,11 @@ button.regresar {
 }
 
 button.regresar:hover {
-    background: #b38b32; /* Dorado más oscuro en hover */
+    background: #cc3d3d; /* Rojo más oscuro en hover */
 }
 
 button.regresar:active {
-    background: #a0742a;
+    background: #b33434;
 }
 
 /* Contenedor del módulo */
@@ -93,7 +93,7 @@ button.regresar:active {
     padding: 20px;
     background: #1c1c1e;
     border-radius: 12px;
-    border-top: 3px solid #d4af37;
+    border-top: 3px solid #ff4d4d; /* Rojo */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     animation: fadeIn 0.3s ease-in-out;
 }
@@ -114,7 +114,7 @@ select, textarea, input[type="number"] {
 
 select:focus, textarea:focus, input[type="number"]:focus {
     outline: none;
-    border-color: #d4af37; /* Dorado en enfoque */
+    border-color: #ff4d4d; /* Rojo en enfoque */
 }
 
 input[type="number"]::placeholder,
@@ -124,7 +124,7 @@ textarea::placeholder {
 
 /* Encabezado de sección */
 h2 {
-    color: #f0e68c;
+    color: #ff6666;
     font-size: 1.5em;
     margin-bottom: 15px;
     font-weight: 600;
@@ -146,7 +146,7 @@ th, td {
 
 th {
     background-color: #3e3e42;
-    color: #d4af37; /* Dorado para los encabezados */
+    color: #ff4d4d; /* Rojo para los encabezados */
 }
 
 td {
