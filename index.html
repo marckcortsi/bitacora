@@ -8,39 +8,33 @@
 </head>
 <body>
     <div class="app">
-        <header>
-            <h1>Bitácora de Unidades</h1>
-        </header>
+        <!-- Título de la aplicación -->
+        <div id="app-title">
+            <header>
+                <h1>Bitácora de Unidades</h1>
+            </header>
+        </div>
+
+        <!-- Menú principal -->
         <div class="menu">
             <button onclick="openModule('verificaciones')">Verificaciones</button>
             <button onclick="openModule('mantenimientos')">Servicios o Mantenimientos</button>
             <button onclick="openModule('combustibles')">Registros de Combustibles</button>
             <button onclick="openModule('reportes')">Reportes de Unidades</button>
         </div>
+
+        <!-- Contenedor del módulo seleccionado -->
         <div id="module-container">
-            <!-- Cada módulo es inicialmente oculto y se mostrará al seleccionar el botón correspondiente -->
-            <div id="verificaciones" class="module" style="display: none;">
-                <h2>Verificaciones</h2>
-                <p>Contenido del módulo de verificaciones.</p>
-                <button class="regresar" onclick="goBack()">Regresar al menú principal</button>
-            </div>
-            <div id="mantenimientos" class="module" style="display: none;">
-                <h2>Servicios o Mantenimientos</h2>
-                <p>Contenido del módulo de servicios o mantenimientos.</p>
-                <button class="regresar" onclick="goBack()">Regresar al menú principal</button>
-            </div>
-            <div id="combustibles" class="module" style="display: none;">
-                <h2>Registros de Combustibles</h2>
-                <p>Contenido del módulo de registros de combustibles.</p>
-                <button class="regresar" onclick="goBack()">Regresar al menú principal</button>
-            </div>
-            <div id="reportes" class="module" style="display: none;">
-                <h2>Reportes de Unidades</h2>
-                <p>Contenido del módulo de reportes de unidades.</p>
-                <button class="regresar" onclick="goBack()">Regresar al menú principal</button>
-            </div>
+            <!-- Los módulos se mostrarán al seleccionar un botón -->
         </div>
     </div>
+
+    <!-- Modal de imagen para ampliar comprobantes -->
+    <div id="image-modal" class="modal" onclick="closeImageModal()">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
