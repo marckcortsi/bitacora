@@ -137,15 +137,18 @@ function generateReport() {
                     <th>Fecha</th>
                     <th>Tipo</th>
                     <th>Observaciones</th>
+                    <th>Comprobante</th>
                 </tr>
         `;
 
         filteredRecords.forEach(record => {
+            const photoHTML = record.photo !== "Sin foto" ? `<img src="${record.photo}" alt="Comprobante" class="comprobante-img">` : "Sin foto";
             tableHTML += `
                 <tr>
                     <td>${record.date}</td>
                     <td>${record.type}</td>
                     <td>${record.observaciones}</td>
+                    <td>${photoHTML}</td>
                 </tr>
             `;
         });

@@ -153,6 +153,15 @@ td {
     background-color: #2a2a2c;
 }
 
+/* Estilo de la imagen de comprobante */
+.comprobante-img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+}
+
 /* Animación de aparición */
 @keyframes fadeIn {
     from {
